@@ -1,6 +1,6 @@
 // src/worker.js
 import { connect } from "cloudflare:sockets";
-const platform = 'node';
+let platform = 'node';
 const stream = require('node:stream');
 
 let Pswd = "";
