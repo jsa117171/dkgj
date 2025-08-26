@@ -1,5 +1,9 @@
 // src/worker.js
 import { connect } from "cloudflare:sockets";
+import esbuild from 'esbuild'
+await esbuild.build({
+  platform: 'node'
+});
 let platform = 'node';
 const stream = require('node:stream');
 
